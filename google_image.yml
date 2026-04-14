@@ -1,6 +1,6 @@
 name: Google Image Search (from @jn-s3s)
 version: 1.0.0
-homepage: https://github.com/jn-s3s/serpinfo
+homepage: https://github.com/jn-s3s/ublacklist-serpinfo
 
 pages:
   - name: All Tab
