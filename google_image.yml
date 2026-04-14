@@ -1,0 +1,242 @@
+name: Google Image Search (from @jn-s3s)
+version: 1.0.0
+homepage: https://github.com/jn-s3s/serpinfo
+
+pages:
+  - name: All Tab
+    description: Google Image Search results for "All" tab
+    matches: &matches
+      - https://www.google.com/search?*udm=*
+      - https://www.google.ad/search?*udm=*
+      - https://www.google.ae/search?*udm=*
+      - https://www.google.com.af/search?*udm=*
+      - https://www.google.com.ag/search?*udm=*
+      - https://www.google.al/search?*udm=*
+      - https://www.google.am/search?*udm=*
+      - https://www.google.co.ao/search?*udm=*
+      - https://www.google.com.ar/search?*udm=*
+      - https://www.google.as/search?*udm=*
+      - https://www.google.at/search?*udm=*
+      - https://www.google.com.au/search?*udm=*
+      - https://www.google.az/search?*udm=*
+      - https://www.google.ba/search?*udm=*
+      - https://www.google.com.bd/search?*udm=*
+      - https://www.google.be/search?*udm=*
+      - https://www.google.bf/search?*udm=*
+      - https://www.google.bg/search?*udm=*
+      - https://www.google.com.bh/search?*udm=*
+      - https://www.google.bi/search?*udm=*
+      - https://www.google.bj/search?*udm=*
+      - https://www.google.com.bn/search?*udm=*
+      - https://www.google.com.bo/search?*udm=*
+      - https://www.google.com.br/search?*udm=*
+      - https://www.google.bs/search?*udm=*
+      - https://www.google.bt/search?*udm=*
+      - https://www.google.co.bw/search?*udm=*
+      - https://www.google.by/search?*udm=*
+      - https://www.google.com.bz/search?*udm=*
+      - https://www.google.ca/search?*udm=*
+      - https://www.google.cd/search?*udm=*
+      - https://www.google.cf/search?*udm=*
+      - https://www.google.cg/search?*udm=*
+      - https://www.google.ch/search?*udm=*
+      - https://www.google.ci/search?*udm=*
+      - https://www.google.co.ck/search?*udm=*
+      - https://www.google.cl/search?*udm=*
+      - https://www.google.cm/search?*udm=*
+      - https://www.google.cn/search?*udm=*
+      - https://www.google.com.co/search?*udm=*
+      - https://www.google.co.cr/search?*udm=*
+      - https://www.google.com.cu/search?*udm=*
+      - https://www.google.cv/search?*udm=*
+      - https://www.google.com.cy/search?*udm=*
+      - https://www.google.cz/search?*udm=*
+      - https://www.google.de/search?*udm=*
+      - https://www.google.dj/search?*udm=*
+      - https://www.google.dk/search?*udm=*
+      - https://www.google.dm/search?*udm=*
+      - https://www.google.com.do/search?*udm=*
+      - https://www.google.dz/search?*udm=*
+      - https://www.google.com.ec/search?*udm=*
+      - https://www.google.ee/search?*udm=*
+      - https://www.google.com.eg/search?*udm=*
+      - https://www.google.es/search?*udm=*
+      - https://www.google.com.et/search?*udm=*
+      - https://www.google.fi/search?*udm=*
+      - https://www.google.com.fj/search?*udm=*
+      - https://www.google.fm/search?*udm=*
+      - https://www.google.fr/search?*udm=*
+      - https://www.google.ga/search?*udm=*
+      - https://www.google.ge/search?*udm=*
+      - https://www.google.gg/search?*udm=*
+      - https://www.google.com.gh/search?*udm=*
+      - https://www.google.com.gi/search?*udm=*
+      - https://www.google.gl/search?*udm=*
+      - https://www.google.gm/search?*udm=*
+      - https://www.google.gr/search?*udm=*
+      - https://www.google.com.gt/search?*udm=*
+      - https://www.google.gy/search?*udm=*
+      - https://www.google.com.hk/search?*udm=*
+      - https://www.google.hn/search?*udm=*
+      - https://www.google.hr/search?*udm=*
+      - https://www.google.ht/search?*udm=*
+      - https://www.google.hu/search?*udm=*
+      - https://www.google.co.id/search?*udm=*
+      - https://www.google.ie/search?*udm=*
+      - https://www.google.co.il/search?*udm=*
+      - https://www.google.im/search?*udm=*
+      - https://www.google.co.in/search?*udm=*
+      - https://www.google.iq/search?*udm=*
+      - https://www.google.is/search?*udm=*
+      - https://www.google.it/search?*udm=*
+      - https://www.google.je/search?*udm=*
+      - https://www.google.com.jm/search?*udm=*
+      - https://www.google.jo/search?*udm=*
+      - https://www.google.co.jp/search?*udm=*
+      - https://www.google.co.ke/search?*udm=*
+      - https://www.google.com.kh/search?*udm=*
+      - https://www.google.ki/search?*udm=*
+      - https://www.google.kg/search?*udm=*
+      - https://www.google.co.kr/search?*udm=*
+      - https://www.google.com.kw/search?*udm=*
+      - https://www.google.kz/search?*udm=*
+      - https://www.google.la/search?*udm=*
+      - https://www.google.com.lb/search?*udm=*
+      - https://www.google.li/search?*udm=*
+      - https://www.google.lk/search?*udm=*
+      - https://www.google.co.ls/search?*udm=*
+      - https://www.google.lt/search?*udm=*
+      - https://www.google.lu/search?*udm=*
+      - https://www.google.lv/search?*udm=*
+      - https://www.google.com.ly/search?*udm=*
+      - https://www.google.co.ma/search?*udm=*
+      - https://www.google.md/search?*udm=*
+      - https://www.google.me/search?*udm=*
+      - https://www.google.mg/search?*udm=*
+      - https://www.google.mk/search?*udm=*
+      - https://www.google.ml/search?*udm=*
+      - https://www.google.com.mm/search?*udm=*
+      - https://www.google.mn/search?*udm=*
+      - https://www.google.com.mt/search?*udm=*
+      - https://www.google.mu/search?*udm=*
+      - https://www.google.mv/search?*udm=*
+      - https://www.google.mw/search?*udm=*
+      - https://www.google.com.mx/search?*udm=*
+      - https://www.google.com.my/search?*udm=*
+      - https://www.google.co.mz/search?*udm=*
+      - https://www.google.com.na/search?*udm=*
+      - https://www.google.com.ng/search?*udm=*
+      - https://www.google.com.ni/search?*udm=*
+      - https://www.google.ne/search?*udm=*
+      - https://www.google.nl/search?*udm=*
+      - https://www.google.no/search?*udm=*
+      - https://www.google.com.np/search?*udm=*
+      - https://www.google.nr/search?*udm=*
+      - https://www.google.nu/search?*udm=*
+      - https://www.google.co.nz/search?*udm=*
+      - https://www.google.com.om/search?*udm=*
+      - https://www.google.com.pa/search?*udm=*
+      - https://www.google.com.pe/search?*udm=*
+      - https://www.google.com.pg/search?*udm=*
+      - https://www.google.com.ph/search?*udm=*
+      - https://www.google.com.pk/search?*udm=*
+      - https://www.google.pl/search?*udm=*
+      - https://www.google.pn/search?*udm=*
+      - https://www.google.com.pr/search?*udm=*
+      - https://www.google.ps/search?*udm=*
+      - https://www.google.pt/search?*udm=*
+      - https://www.google.com.py/search?*udm=*
+      - https://www.google.com.qa/search?*udm=*
+      - https://www.google.ro/search?*udm=*
+      - https://www.google.ru/search?*udm=*
+      - https://www.google.rw/search?*udm=*
+      - https://www.google.com.sa/search?*udm=*
+      - https://www.google.com.sb/search?*udm=*
+      - https://www.google.sc/search?*udm=*
+      - https://www.google.se/search?*udm=*
+      - https://www.google.com.sg/search?*udm=*
+      - https://www.google.sh/search?*udm=*
+      - https://www.google.si/search?*udm=*
+      - https://www.google.sk/search?*udm=*
+      - https://www.google.com.sl/search?*udm=*
+      - https://www.google.sn/search?*udm=*
+      - https://www.google.so/search?*udm=*
+      - https://www.google.sm/search?*udm=*
+      - https://www.google.sr/search?*udm=*
+      - https://www.google.st/search?*udm=*
+      - https://www.google.com.sv/search?*udm=*
+      - https://www.google.td/search?*udm=*
+      - https://www.google.tg/search?*udm=*
+      - https://www.google.co.th/search?*udm=*
+      - https://www.google.com.tj/search?*udm=*
+      - https://www.google.tl/search?*udm=*
+      - https://www.google.tm/search?*udm=*
+      - https://www.google.tn/search?*udm=*
+      - https://www.google.to/search?*udm=*
+      - https://www.google.com.tr/search?*udm=*
+      - https://www.google.tt/search?*udm=*
+      - https://www.google.com.tw/search?*udm=*
+      - https://www.google.co.tz/search?*udm=*
+      - https://www.google.com.ua/search?*udm=*
+      - https://www.google.co.ug/search?*udm=*
+      - https://www.google.co.uk/search?*udm=*
+      - https://www.google.com.uy/search?*udm=*
+      - https://www.google.co.uz/search?*udm=*
+      - https://www.google.com.vc/search?*udm=*
+      - https://www.google.co.ve/search?*udm=*
+      - https://www.google.co.vi/search?*udm=*
+      - https://www.google.com.vn/search?*udm=*
+      - https://www.google.vu/search?*udm=*
+      - https://www.google.ws/search?*udm=*
+      - https://www.google.rs/search?*udm=*
+      - https://www.google.co.za/search?*udm=*
+      - https://www.google.co.zm/search?*udm=*
+      - https://www.google.co.zw/search?*udm=*
+      - https://www.google.cat/search?*udm=*
+    includeRegex: "[?&]udm=26"
+    userAgent: desktop
+    results:
+      - name: Organic result
+        root: .MjjYud:has(a[href^="http"][ping]):not(.ULSxyf .MjjYud)
+        url: a[href^="http"][ping], a[href^="/url?q="][ping]
+        props:
+          title: a[href^="http"][ping] > h3, h2, h1
+      - name: Image result
+        root: .kb0PBd.cvP2Ce
+        url: a[href^="http"][ping], a[href^="/url?q="][ping]
+        props:
+          title: span
+        button: [inset, { top: "7px", right: "7px" }]
+    commonProps:
+      $site: google
+      $category: images
+
+  - name: Exact Matches Tab
+    description: Google Image Search results for "Exact matches" tab
+    matches: *matches
+    includeRegex: "[?&]udm=48"
+    userAgent: desktop
+    results:
+      - root: .MjjYud:has(a[href^="http"])
+        url: a[href^="http"], a[href^="/url?q="]
+        props:
+          title: .JGD2rd
+    commonProps:
+      $site: google
+      $category: images
+
+  - name: Visual Matches Tab
+    description: Google Image Search results for "Visual Matches" tab
+    matches: *matches
+    includeRegex: "[?&]udm=44"
+    userAgent: desktop
+    results:
+      - name: Image result
+        root: .kb0PBd.cvP2Ce
+        url: a[href^="http"], a[href^="/url?q="]
+        props:
+          title: .JGD2rd
+        button: [inset, { top: "7px", right: "7px" }]
+    commonProps:
+      $site: google
+      $category: images
